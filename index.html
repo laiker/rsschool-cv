@@ -23,13 +23,11 @@
                 margin: 0 auto;
                 text-align: justify;
             }
-
             .cv-block code{
                 display: block;
                 background-color: grey;
                 color: white;
             }
-
             .cv-block img {
                 display: block;
                 position: relative;
@@ -41,9 +39,7 @@
         <section class="cv-section">
             <div class="cv-block">
                 <h1>Ruslan Demin CV</h1>
-                
                 <img src="https://instagram.fuln9-1.fna.fbcdn.net/v/t51.2885-19/10693391_374318206076842_238129083_a.jpg?_nc_ht=instagram.fuln9-1.fna.fbcdn.net&_nc_ohc=DTvPvHZZbPkAX8NzroK&oh=24d9663b061db2dcd6f8d59808126643&oe=606FFE89" width="150" height="150" alt="Ruslan Demin dev cv">
-
                 <p><strong>Name</strong>: Ruslan Demin</p>
                 <p><strong>Contact email</strong>: <a href="mailto:laikernest@gmail.com">laikernest@gmail.com</a></p>
                 <p><strong>About me</strong>: My target is always learning new thing with programming. In my free time i go to swimming at the pool and traning in a gym.</p>
@@ -55,19 +51,15 @@
                       * Use recursion always<br>
                       * Don't be a dummy<br>
                       */<br><br>
-                    
                       if (!i) {<br>
                         i = 1;<br>
                       }<br><br>
-                    
                       if (!x) {<br>
                         x = [];<br>
                       }<br><br>
-                    
                       if (i === str.length + 1) {<br>
                           return x.join('');<br>
                       }<br><br>
-                    
                       x.push(str[str.length - i])<br>
                       return solution(str, x, ++i)<br>
                     }
