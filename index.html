@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Ruslan Demin rsschool-cv</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta charset="utf-8">
+        <style>
+            body {
+                background-image: linear-gradient( 135deg, #3B2667 10%, #BC78EC 100%);
+                font-size: 25px;
+                line-height: 1.5;
+            }
+
+            .cv-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: white;
+                padding: 50px;
+                border-radius: 20px;
+                max-width: 700px;
+                width: 100%;
+                margin: 0 auto;
+                text-align: justify;
+            }
+
+            .cv-block code{
+                display: block;
+                background-color: grey;
+                color: white;
+            }
+
+            .cv-block img {
+                display: block;
+                position: relative;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="cv-section">
+            <div class="cv-block">
+                <h1>Ruslan Demin CV</h1>
+                
+                <img src="https://instagram.fuln9-1.fna.fbcdn.net/v/t51.2885-19/10693391_374318206076842_238129083_a.jpg?_nc_ht=instagram.fuln9-1.fna.fbcdn.net&_nc_ohc=DTvPvHZZbPkAX8NzroK&oh=24d9663b061db2dcd6f8d59808126643&oe=606FFE89" width="150" height="150" alt="Ruslan Demin dev cv">
+
+                <p><strong>Name</strong>: Ruslan Demin</p>
+                <p><strong>Contact email</strong>: <a href="mailto:laikernest@gmail.com">laikernest@gmail.com</a></p>
+                <p><strong>About me</strong>: My target is always learning new thing with programming. In my free time i go to swimming at the pool and traning in a gym.</p>
+                <p><strong>Skills</strong>: HTML 5, CSS 3, JS, PHP, MYSql, Bitrix, Laravel, VScode.</p>
+                <p><strong>Code Example</strong>: <code>
+                    function solution(str, x, i) {<br>
+                      /*<br>
+                      * Easy Solution<br>
+                      * Use recursion always<br>
+                      * Don't be a dummy<br>
+                      */<br><br>
+                    
+                      if (!i) {<br>
+                        i = 1;<br>
+                      }<br><br>
+                    
+                      if (!x) {<br>
+                        x = [];<br>
+                      }<br><br>
+                    
+                      if (i === str.length + 1) {<br>
+                          return x.join('');<br>
+                      }<br><br>
+                    
+                      x.push(str[str.length - i])<br>
+                      return solution(str, x, ++i)<br>
+                    }
+                    </code>
+                </p>
+                <p><strong>Experience</strong>: 4 years of production experience at CMS Bitrix, Skill traning at: <a target="_blank" href="https://ru.hexlet.io/u/laiker">Hexlet</a> and FreeCodeCamp. </p>
+                <p><strong>Education</strong>: Higher education bachelor's degree at NSTU with a degree in Business Analyst.</p>
+                <p><strong>English</strong>: I am traveled to the USA under the international work and travel program and spent 4 months there and talking with native speakers.</p>
+            </div>
+        </section>
+    </body>
+</html>
