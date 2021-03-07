@@ -10,7 +10,6 @@
                 font-size: 25px;
                 line-height: 1.5;
             }
-
             .cv-section {
                 display: flex;
                 flex-direction: column;
@@ -23,52 +22,79 @@
                 margin: 0 auto;
                 text-align: justify;
             }
+
             .cv-block code{
                 display: block;
                 background-color: grey;
                 color: white;
             }
+
             .cv-block img {
                 display: block;
                 position: relative;
                 border-radius: 50%;
             }
+
+            header h1 {
+                text-align: center;
+                color: white;
+            }
+
+            footer, footer a{
+                text-align: center;
+                color: white;
+            }
         </style>
     </head>
     <body>
-        <section class="cv-section">
-            <div class="cv-block">
-                <h1>Ruslan Demin CV</h1>
+        <header><h1>Ruslan Demin CV</h1></header>
+        <main class="cv-section">
+            <section class="cv-block">
                 <img src="https://instagram.fuln9-1.fna.fbcdn.net/v/t51.2885-19/10693391_374318206076842_238129083_a.jpg?_nc_ht=instagram.fuln9-1.fna.fbcdn.net&_nc_ohc=DTvPvHZZbPkAX8NzroK&oh=24d9663b061db2dcd6f8d59808126643&oe=606FFE89" width="150" height="150" alt="Ruslan Demin dev cv">
-                <p><strong>Name</strong>: Ruslan Demin</p>
-                <p><strong>Contact email</strong>: <a href="mailto:laikernest@gmail.com">laikernest@gmail.com</a></p>
-                <p><strong>About me</strong>: My target is always learning new thing with programming. In my free time i go to swimming at the pool and traning in a gym.</p>
-                <p><strong>Skills</strong>: HTML 5, CSS 3, JS, PHP, MYSql, Bitrix, Laravel, VScode.</p>
-                <p><strong>Code Example</strong>: <code>
+
+                <p><h2>Name</h2> Ruslan Demin</p>
+                <p><h2>Contact email</h2> <a href="mailto:laikernest@gmail.com">laikernest@gmail.com</a></p>
+                <p><h2>About me</h2> My target is always <mark>learning new thing with programming</mark>. In my free time i go to swimming at the pool and traning in a gym.</p>
+                <p><h2>Skills</h2>
+                    <ul>
+                        <li>HTML 5</li>
+                        <li>CSS 3</li>
+                        <li>JS</li>
+                        <li>PHP</li>
+                        <li>MYSql</li>
+                        <li>Laravel</li>
+                        <li>VScode</li>
+                    </ul>
+                <p><h2>Code Example</h2> <code>
                     function solution(str, x, i) {<br>
-                      /*<br>
-                      * Easy Solution<br>
-                      * Use recursion always<br>
-                      * Don't be a dummy<br>
-                      */<br><br>
-                      if (!i) {<br>
+                    /*<br>
+                    * Easy Solution<br>
+                    * Use recursion always<br>
+                    * Don't be a dummy<br>
+                    */<br><br>
+                    
+                    if (!i) {<br>
                         i = 1;<br>
-                      }<br><br>
-                      if (!x) {<br>
+                    }<br><br>
+                    
+                    if (!x) {<br>
                         x = [];<br>
-                      }<br><br>
-                      if (i === str.length + 1) {<br>
-                          return x.join('');<br>
-                      }<br><br>
-                      x.push(str[str.length - i])<br>
-                      return solution(str, x, ++i)<br>
+                    }<br><br>
+                    
+                    if (i === str.length + 1) {<br>
+                        return x.join('');<br>
+                    }<br><br>
+                    
+                    x.push(str[str.length - i])<br>
+                    return solution(str, x, ++i)<br>
                     }
                     </code>
                 </p>
-                <p><strong>Experience</strong>: 4 years of production experience at CMS Bitrix, Skill traning at: <a target="_blank" href="https://ru.hexlet.io/u/laiker">Hexlet</a> and FreeCodeCamp. </p>
-                <p><strong>Education</strong>: Higher education bachelor's degree at NSTU with a degree in Business Analyst.</p>
-                <p><strong>English</strong>: I am traveled to the USA under the international work and travel program and spent 4 months there and talking with native speakers.</p>
-            </div>
-        </section>
+                <p><h2>Experience</h2> 4 years of production experience at CMS Bitrix, Skill traning at: <a target="_blank" href="https://ru.hexlet.io/u/laiker">Hexlet</a> and FreeCodeCamp. </p>
+                <p><h2>Education</h2> Higher education bachelor's degree at NSTU with a degree in Business Analyst.</p>
+                <p><h2>English</h2> I am traveled to the USA under the international work and travel program and spent 4 months there and talking with native speakers.</p>
+            </section>
+        </main>
+        <footer><a href="https://github.com/laiker" target="_blank">My Github</a>, (c) 2021</footer>
     </body>
 </html>
